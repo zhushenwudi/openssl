@@ -3,7 +3,7 @@ plugins {
     id 'kotlin-android'
 }
 
-apply from: 'nexus_upload.gradle'
+//apply from: 'nexus_upload.gradle'
 
 android {
 //    compileSdk 30
