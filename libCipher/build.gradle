@@ -24,7 +24,6 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.ilab.newcaboinet"
         minSdkVersion 25
         targetSdkVersion 30
         versionCode 1
