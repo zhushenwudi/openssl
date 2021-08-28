@@ -3,8 +3,8 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        maven { url "https://jitpack.io" }
         maven { url 'http://127.0.0.1:8081/repository/maven-releases' }
-        maven { url 'http://127.0.0.1:8081/repository/maven-snapshots' }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:7.0.1"
