@@ -6,19 +6,31 @@ plugins {
 apply from: 'nexus_upload.gradle'
 
 android {
-    compileSdk 30
+//    compileSdk 30
+//
+//    defaultConfig {
+//        minSdk 25
+//        targetSdk 30
+//        versionCode 1
+//        versionName "1.0"
+//
+//        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+//
+//        ndk {
+//            abiFilters 'armeabi-v7a', 'x86'
+//        }
+//    }
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
 
     defaultConfig {
-        minSdk 25
-        targetSdk 30
+        applicationId "com.ilab.newcaboinet"
+        minSdkVersion 25
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-
-        ndk {
-            abiFilters 'armeabi-v7a', 'x86'
-        }
     }
 
     buildTypes {
@@ -26,6 +38,15 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
     }
 }
 
