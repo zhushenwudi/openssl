@@ -34,4 +34,15 @@ object OpensslUtil {
         } ?: Log.e(OpensslUtil::class.java.simpleName, VERIFY_FIRST)
         return result == 1
     }
+
+    /**
+     * 获取密码 aes 的 key
+     */
+    fun getEncodeKey(): String {
+        var result = ""
+        jniUtils?.apply {
+            result = getEncodeKey()
+        } ?: Log.e(OpensslUtil::class.java.simpleName, VERIFY_FIRST)
+        return result
+    }
 }

@@ -17,4 +17,9 @@ class JniUtils {
      * 校验apk签名是否有效
      */
     external fun verifySha1OfApk(context: Context): Boolean
+
+    /**
+     * 获取密码 aes 的 key
+     */
+    external fun getEncodeKey(): String
 }
